@@ -5,8 +5,8 @@
   "scripts": {
     "sync:openapi": "node -e \"require('fs').copyFileSync('../openapi.yaml', './static/openapi.yaml')\"",
     "optimize:images": "node scripts/optimize-images.mjs",
-    "start": "npm run sync:openapi && docusaurus start --port 3001",
-    "build": "npm run optimize:images && npm run sync:openapi && docusaurus build",
+    "start": "node init && npm run sync:openapi && docusaurus start --port 3001",
+    "build": "node init && npm run optimize:images && npm run sync:openapi && docusaurus build",
     "serve": "docusaurus serve",
     "deploy": "docusaurus deploy"
   },
