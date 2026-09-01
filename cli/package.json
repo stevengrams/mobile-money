@@ -6,8 +6,8 @@
     "momo-cli": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsx src/index.ts",
+    "build": "node init && tsc",
+    "dev": "node init && tsx src/index.ts",
     "test": "tsx --test src/**/*.test.ts"
   },
   "dependencies": {
